@@ -6,6 +6,56 @@
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<style>
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-75%) translateY(-75%);
+  -moz-transform: translateX(-75%) translateY(-75%);
+  -webkit-transform: translateX(-75%) translateY(-75%);
+  transform: translateX(-75%) translateY(-75%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }}
+</style>
 </head>
 
 <body>
@@ -14,7 +64,7 @@
     <div class="overlay"></div>
     <!-- The HTML5 video element that will create the background video on the header -->
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+      <source src="videos/Red-Squirrels.mp4" type="video/mp4">
     </video>
   
     <!-- The header content -->
@@ -43,6 +93,6 @@
       </div>
     </div>
   </section>
+
 </body>
 </html>
-
