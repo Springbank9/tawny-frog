@@ -35,7 +35,7 @@
   }
   
   .logo {
-    width: 50px;
+    width: 20px;
     font-size: 25px;
     color: #8f8f8f;
     text-transform: uppercase;
@@ -53,7 +53,7 @@
   
   nav {
     float: right;
-    width: 60%;
+    width: 80%;
   }
   @media only screen and (max-width: 766px) {
     nav {
